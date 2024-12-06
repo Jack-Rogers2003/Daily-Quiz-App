@@ -1,0 +1,80 @@
+<resources>
+    <string name="app_name">Coursework_1</string>
+    <string name="star_button_text">Start</string>
+    <string name="readyToPlay">Ready To Play!</string>
+    <string name="timeToPlay">You have 3 hours 4 minutes 5 seconds left before you can play</string>
+    <string name="selectedItem">Selected item:</string>
+    <string name="settings">Settings</string>
+    <string name="headerTitle">Quiz 306</string>
+    <string name="homeTitle"> Welcome Jack!</string>
+    <string name="profileTitle"> Profile</string>
+    <string name="quickStartDescription"> Play with previous settings:</string>
+    <string name="quickStartButtonText"> Quick Start</string>
+    <string name="enter_number_of_questions">Enter number of wanted questions</string>
+    <string name="welcome_to_quiz_306">Welcome to Quiz 306!</string>
+    <string name="username">Username:</string>
+    <string name="choose_preferred_quiz_topic">Choose preferred quiz topic:</string>
+    <string name="enterDailyResetTime">Enter daily reset time:</string>
+    <string name="loginButton">Enter</string>
+    <string name="_55">55</string>
+    <string name="_45">45</string>
+    <string name="analytics">Analytics</string>
+    <string name="total_questions_answered_correct_vs_incorrect">Total Questions Answered Correct Vs Incorrect</string>
+    <string name="enter_username">Enter Username</string>
+    <string name="login_text">Login</string>
+    <string name="sign_up_text">Sign Up</string>
+    <string name="view_previous_answers">View Previous Answers</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="log_out">Log Out</string>
+    <string name="back">Back</string>
+    <string name="exit">Exit</string>
+    <string name="button_text_true">True</string>
+    <string name="button_text_false">False</string>
+    <string name="select_type_of_question">Select Type of Question</string>
+    <string name="change_password">Change Password</string>
+    <string name="change_reset_time">Change Reset Time</string>
+    <string name="change_username">Change Username</string>
+    <string name="search">Search</string>
+    <string name="leaderboard">Leaderboard</string>
+    <string name="enter_email">Enter Email</string>
+    <string name="achievements">Achievements</string>
+
+    <string-array name="types_of_questions">
+        <item>True or False</item>
+        <item>Multiple Choice</item>
+    </string-array>
+
+    <string-array name="tab_names">
+        <item>Home</item>
+        <item>Quiz</item>
+        <item>Leaderboard</item>
+        <item>Profile</item>
+    </string-array>
+
+    <string-array name="topics">
+        <item>General Knowledge</item>
+        <item>Entertainment: Books</item>
+        <item>Entertainment: Film</item>
+        <item>Entertainment: Music</item>
+        <item>Entertainment: Musicals and Theatres</item>
+        <item>Entertainment: Television</item>
+        <item>Entertainment: Video Games</item>
+        <item>Entertainment: Board Games</item>
+        <item>Entertainment: Science &amp; Nature</item>
+        <item>Science: Computers</item>
+        <item>Science: Mathematics</item>
+        <item>Mythology</item>
+        <item>Sports</item>
+        <item>Geography</item>
+        <item>History</item>
+        <item>Politics</item>
+        <item>Art</item>
+        <item>Celebrities</item>
+        <item>Animals</item>
+        <item>Vehicles</item>
+        <item>Entertainment Comics</item>
+        <item>Science: Gadgets</item>
+        <item>Entertainment: Japanese Anime &amp; Manga</item>
+        <item>Entertainment: Cartoon &amp; Animation</item>
+    </string-array>
+</resources>

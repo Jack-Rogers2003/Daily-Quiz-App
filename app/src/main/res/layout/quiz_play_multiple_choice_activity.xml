@@ -1,0 +1,112 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/teal"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/answerButton1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="384dp"
+        android:layout_marginEnd="16dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="24sp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/answerButton2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/answerButton1"
+        android:layout_marginTop="16dp"
+        android:textSize="24sp"/>
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/main_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:elevation="1dp"
+        android:background="@color/navy_blue"
+        app:title="@string/headerTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:titleTextColor="@android:color/white" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/answerButton3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/answerButton2"
+        android:layout_marginTop="16dp"
+        android:textSize="24sp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/answerButton4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/answerButton3"
+        android:layout_marginTop="16dp"
+        android:textSize="24sp"/>
+
+    <com.google.android.material.textfield.MaterialAutoCompleteTextView
+        android:id="@+id/quizQuestionMultipleChoice"
+        android:layout_width="369dp"
+        android:layout_height="267dp"
+        android:background="@drawable/text_border"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/answerButton1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_toolbar"
+        android:enabled="false"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/quizMultipleChoiceBackButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/exit"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/answerButton4"
+        android:textSize="24sp"/>
+
+    <ImageButton
+        android:id="@+id/multipleChoiceTTS"
+        android:layout_width="55dp"
+        android:layout_height="53dp"
+        android:contentDescription="Speak"
+        android:src="@drawable/microphone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.847"
+        app:layout_constraintStart_toEndOf="@+id/quizMultipleChoiceBackButton"
+        app:layout_constraintTop_toBottomOf="@+id/answerButton4"
+        app:layout_constraintVertical_bias="0.486" />
+</androidx.constraintlayout.widget.ConstraintLayout>

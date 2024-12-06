@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/teal"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/main_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:elevation="1dp"
+        android:background="@color/navy_blue"
+        app:title="@string/headerTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:titleTextColor="@android:color/white" />
+
+    <com.google.android.material.textfield.MaterialAutoCompleteTextView
+        android:id="@+id/quizQuestionTrueOrFalse"
+        android:layout_width="383dp"
+        android:layout_height="270dp"
+        android:layout_marginBottom="384dp"
+        android:background="@drawable/text_border"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_toolbar"
+        android:enabled="false"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/trueButton"
+        android:layout_width="159dp"
+        android:layout_height="234dp"
+        android:layout_marginBottom="120dp"
+        android:text="@string/button_text_true"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.591"
+        app:layout_constraintStart_toEndOf="@+id/falseButton"
+        app:layout_constraintTop_toBottomOf="@+id/quizQuestionTrueOrFalse"
+        app:layout_constraintVertical_bias="0.483" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/falseButton"
+        android:layout_width="165dp"
+        android:layout_height="233dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="120dp"
+        android:text="@string/button_text_false"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/quizQuestionTrueOrFalse"
+        app:layout_constraintVertical_bias="0.48" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/trueOrFalseBack"
+        android:layout_width="108dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="44dp"
+        android:text="@string/exit"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/quizQuestionTrueOrFalse"
+        app:layout_constraintVertical_bias="0.926" />
+
+    <ImageButton
+        android:id="@+id/trueOrFalseTTS"
+        android:layout_width="55dp"
+        android:layout_height="53dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="32dp"
+        android:contentDescription="Speak"
+        android:src="@drawable/microphone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.847"
+        app:layout_constraintStart_toEndOf="@+id/trueOrFalseBack"
+        app:layout_constraintTop_toBottomOf="@+id/trueButton"
+        app:layout_constraintVertical_bias="0.486" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

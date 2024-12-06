@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/teal">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/previousQuestionToolBar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/navy_blue"
+        android:elevation="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.002"
+        app:title="Previous Questions"
+        app:titleTextColor="@android:color/white" />
+
+    <Spinner
+        android:id="@+id/previousQuestionsType"
+        android:layout_width="139dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:textSize="30sp"
+        android:background="@drawable/text_border"
+        app:layout_constraintBottom_toTopOf="@+id/searchForPreviousQuestionsButton"
+        app:layout_constraintEnd_toStartOf="@+id/previousQuestionsTopic"
+        app:layout_constraintHorizontal_bias="0.364"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/previousQuestionToolBar"
+        app:layout_constraintVertical_bias="0.973" />
+
+    <Spinner
+        android:id="@+id/previousQuestionsTopic"
+        android:layout_width="132dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:textSize="18sp"
+        android:background="@drawable/text_border"
+        app:layout_constraintBottom_toTopOf="@+id/exitPreviousQuestionsButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.809"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/previousQuestionToolBar"
+        app:layout_constraintVertical_bias="0.974" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/previousQuestionsRecyclerView"
+        android:layout_width="385dp"
+        android:layout_height="497dp"
+        android:background="@drawable/text_border"
+        android:clipToPadding="false"
+        android:padding="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.313"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/previousQuestionToolBar"
+        app:layout_constraintVertical_bias="0.28" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/exitPreviousQuestionsButton"
+        android:layout_width="159dp"
+        android:layout_height="88dp"
+        android:text="@string/exit"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.823"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/previousQuestionsRecyclerView"
+        app:layout_constraintVertical_bias="0.77" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/searchForPreviousQuestionsButton"
+        android:layout_width="165dp"
+        android:layout_height="86dp"
+        android:text="@string/search"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.092"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/previousQuestionsRecyclerView"
+        app:layout_constraintVertical_bias="0.754" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
